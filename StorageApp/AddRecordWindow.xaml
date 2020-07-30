@@ -1,0 +1,49 @@
+﻿<Window x:Class="StorageApp.AddRecordWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StorageApp"
+        mc:Ignorable="d"
+        Title="AddRecordWindow" Height="301.667" Width="361.236">
+    <Grid>
+        <StackPanel Grid.Column="1">
+
+            <Grid Margin="20,30,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Date" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <DatePicker Name="ProductReceivedDatePicker" Grid.Column="2"  VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Margin="20,0,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Product name" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <ComboBox Name="ProductNameComboBox" Grid.Column="2"  />
+            </Grid>
+            <Grid Margin="20,0,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="New name" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Name="ProductNameTextBox" AcceptsReturn="True" Grid.Column="2"/>
+            </Grid>
+            <Grid Margin="20,0,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  Text="Price" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Name="ProductPriceTextBox" AcceptsReturn="True" Grid.Column="2"/>
+            </Grid>
+            <Button Name="AddRecordButton" Content="Add" Margin="20,0,20,20" Width="75" Click="AddRecordButton_Click"/>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
